@@ -11,6 +11,9 @@
 
     <artifactId>homepage-eureka</artifactId>
 
+    <name>homepage-eureka</name>
+    <description>Spring Cloud Eureka</description>
+
     <dependencies>
         <!-- 提供服务发现与服务注册 -->
         <dependency>
