@@ -7,7 +7,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http:server1:8000/eureka/
+      defaultZone: http://server1:8000/eureka/
 zuul:
   prefix: /imooc
   routes:
