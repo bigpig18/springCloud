@@ -53,6 +53,7 @@
         </dependencies>
     </dependencyManagement>
 
+
     <!-- 配置远程仓库 -->
     <repositories>
         <repository>
