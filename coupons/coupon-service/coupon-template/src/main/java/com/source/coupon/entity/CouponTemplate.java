@@ -3,6 +3,9 @@ package com.source.coupon.entity;
 import com.source.coupon.constant.CouponCategory;
 import com.source.coupon.constant.DistributeTarget;
 import com.source.coupon.constant.ProductLine;
+import com.source.coupon.converter.CouponCategoryConverter;
+import com.source.coupon.converter.ProductLineConverter;
+import com.source.coupon.converter.RuleConverter;
 import com.source.coupon.vo.TemplateRule;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -65,11 +68,13 @@ public class CouponTemplate implements Serializable {
      * 优惠券分类
      */
     @Column(name = "category",nullable = false)
+    @Convert(converter = CouponCategoryConverter.class)
     private CouponCategory category;
     /**
      * 产品线
      */
     @Column(name = "product_line",nullable = false)
+    @Convert(converter = ProductLineConverter.class)
     private ProductLine productLine;
     /**
      * 优惠券总数
@@ -96,11 +101,13 @@ public class CouponTemplate implements Serializable {
      * 目标用户
      */
     @Column(name = "target",nullable = false)
+    @Convert(converter = DistributeTarget.class)
     private DistributeTarget target;
     /**
      * 优惠券规则
      */
     @Column(name = "rule",nullable = false)
+    @Convert(converter = RuleConverter.class)
     private TemplateRule rule;
 
     public CouponTemplate(String name, String logo, String desc, String category,
