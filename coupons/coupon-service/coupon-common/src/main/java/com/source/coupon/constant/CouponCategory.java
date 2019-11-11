@@ -14,7 +14,7 @@ import java.util.stream.Stream;
  */
 @AllArgsConstructor
 @Getter
-public enum CouponGategory {
+public enum CouponCategory {
 
     /**
      * 满减 - 折扣 - 立减
@@ -32,7 +32,7 @@ public enum CouponGategory {
      */
     private String code;
 
-    public static CouponGategory of(String code){
+    public static CouponCategory of(String code){
         //code 不能为空
         Objects.requireNonNull(code);
         return Stream.of(values())
