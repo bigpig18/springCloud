@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/imooc-homepage-service/homepage-common/homepage-common.iml" filepath="$PROJECT_DIR$/imooc-homepage-service/homepage-common/homepage-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/imooc-homepage-service/homepage-course/homepage-course.iml" filepath="$PROJECT_DIR$/imooc-homepage-service/homepage-course/homepage-course.iml" />
       <module fileurl="file://$PROJECT_DIR$/homepage-eureka/homepage-eureka.iml" filepath="$PROJECT_DIR$/homepage-eureka/homepage-eureka.iml" />
@@ -9,6 +10,10 @@
       <module fileurl="file://$PROJECT_DIR$/homepage-zuul/homepage-zuul.iml" filepath="$PROJECT_DIR$/homepage-zuul/homepage-zuul.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/imooc-homepage.iml" filepath="$PROJECT_DIR$/.idea/imooc-homepage.iml" />
       <module fileurl="file://$PROJECT_DIR$/imooc-homepage-service/imooc-homepage-service.iml" filepath="$PROJECT_DIR$/imooc-homepage-service/imooc-homepage-service.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/homepage-eureka/homepage-eureka.iml" filepath="$PROJECT_DIR$/homepage-eureka/homepage-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imooc-homepage.iml" filepath="$PROJECT_DIR$/imooc-homepage.iml" />
+>>>>>>> 7d157e08b2f4664fed9c6a697b319bade7cdd2ef
     </modules>
   </component>
 </project>
