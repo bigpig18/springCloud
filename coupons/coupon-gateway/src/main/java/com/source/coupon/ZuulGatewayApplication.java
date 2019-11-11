@@ -1,4 +1,4 @@
-package com.source.coupon.coupon;
+package com.source.coupon;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.cloud.client.SpringCloudApplication;
