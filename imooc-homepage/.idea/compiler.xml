@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="homepage-common" />
+        <module name="homepage-course" />
+        <module name="homepage-eureka" />
+        <module name="homepage-user" />
+        <module name="homepage-zuul" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="homepage-common" target="1.8" />
+      <module name="homepage-course" target="1.8" />
+      <module name="homepage-eureka" target="1.8" />
+      <module name="homepage-user" target="1.8" />
+      <module name="homepage-zuul" target="1.8" />
+      <module name="imooc-homepage" target="1.8" />
+      <module name="imooc-homepage-service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
