@@ -1,11 +1,13 @@
 package com.source.coupon.entity;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.source.coupon.constant.CouponCategory;
 import com.source.coupon.constant.DistributeTarget;
 import com.source.coupon.constant.ProductLine;
 import com.source.coupon.converter.CouponCategoryConverter;
 import com.source.coupon.converter.ProductLineConverter;
 import com.source.coupon.converter.RuleConverter;
+import com.source.coupon.serialization.CouponTemplateSerialize;
 import com.source.coupon.vo.TemplateRule;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -30,6 +32,7 @@ import java.util.Date;
 @Entity
 @EntityListeners(AuditingEntityListener.class)
 @Table(name = "coupon_template")
+@JsonSerialize(using = CouponTemplateSerialize.class)
 public class CouponTemplate implements Serializable {
 
     /**
