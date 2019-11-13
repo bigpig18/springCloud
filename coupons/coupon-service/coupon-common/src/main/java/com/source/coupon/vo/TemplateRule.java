@@ -38,6 +38,12 @@ public class TemplateRule {
      */
     private String weight;
 
+    public boolean validate(){
+        return expiration.validate() && discount.validate()
+                && usage.validate() && limitation > 0
+                && StringUtils.isNotEmpty(weight);
+    }
+
     /**
      * 有限期限规则
      */
