@@ -22,15 +22,15 @@ public class Constant {
          */
         public static final String COUPON_TEMPLATE = "coupon_template_code_";
         /**
-         * 用户当前所有可用的优惠券key前缀
+         * 用户当前所有可用的优惠券 key前缀
          */
         public static final String USER_COUPON_USABLE = "user_coupon_usable_";
         /**
-         * 用户已使用的优惠券key前缀
+         * 用户当前所有已用的优惠券 key前缀
          */
         public static final String USER_COUPON_USED = "user_coupon_used";
         /**
-         * 过期的优惠券
+         * 用户当前所有过期的优惠券 key前缀
          */
         public static final String USER_COUPON_EXPIRED = "user_coupon_expired";
     }
