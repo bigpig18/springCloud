@@ -5,6 +5,7 @@ import com.source.coupon.constant.CouponCategory;
 import com.source.coupon.constant.DistributeTarget;
 import com.source.coupon.constant.ProductLine;
 import com.source.coupon.converter.CouponCategoryConverter;
+import com.source.coupon.converter.DistributeTargetConverter;
 import com.source.coupon.converter.ProductLineConverter;
 import com.source.coupon.converter.RuleConverter;
 import com.source.coupon.serialization.CouponTemplateSerialize;
@@ -104,7 +105,7 @@ public class CouponTemplate implements Serializable {
      * 目标用户
      */
     @Column(name = "target",nullable = false)
-    @Convert(converter = DistributeTarget.class)
+    @Convert(converter = DistributeTargetConverter.class)
     private DistributeTarget target;
     /**
      * 优惠券规则
