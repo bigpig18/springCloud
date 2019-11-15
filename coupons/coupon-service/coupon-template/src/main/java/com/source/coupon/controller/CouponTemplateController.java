@@ -42,6 +42,8 @@ public class CouponTemplateController {
 
     /**
      * 创建优惠券模板
+     * 127.0.0.1:7001/coupon-template/template/build
+     * 127.0.0.1:9000/coupon/coupon-template/template/build
      * @param request {@link TemplateRequest} 优惠券请求模板
      * @return {@link CouponTemplate}优惠券模板信息
      * @throws CouponException {@link CouponException} 自定义异常
@@ -54,6 +56,8 @@ public class CouponTemplateController {
 
     /**
      * 构造优惠券模板详情
+     * 127.0.0.1:7001/coupon-template/template/info
+     * 127.0.0.1:9000/coupon/coupon-template/template/info
      * @param id id
      * @return {@link CouponTemplate}优惠券模板信息
      * @throws CouponException {@link CouponException} 自定义异常
@@ -66,6 +70,8 @@ public class CouponTemplateController {
 
     /**
      * 查询所有可用的优惠券模板
+     * 127.0.0.1:7001/coupon-template/template/sdk/all
+     * 127.0.0.1:9000/coupon/coupon-template/template/sdk/all
      * @return list
      */
     @GetMapping(value = "/template/sdk/all")
@@ -76,6 +82,8 @@ public class CouponTemplateController {
 
     /**
      * 获取模板ids到CouponTemplateSdk的映射
+     * 127.0.0.1:7001/coupon-template/template/sdk/infos
+     * 127.0.0.1:9000/coupon/coupon-template/template/sdk/infos
      * @param ids id
      * @return map
      */
