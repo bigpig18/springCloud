@@ -20,6 +20,10 @@ zuul:
       serviceId: eureka-client-coupon-template
       # 是否需要跳过前缀
       strip-prefix: false
+    distribution:
+      path: /coupon-distribution/**
+      serviceId: eureka-client-coupon-distribute
+      strip-prefix: false
   host:
     connect-timeout-millis: 15000
     socket-timeout-millis: 60000
