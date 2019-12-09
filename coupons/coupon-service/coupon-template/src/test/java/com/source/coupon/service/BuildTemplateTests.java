@@ -8,7 +8,6 @@ import com.source.coupon.constant.ProductLine;
 import com.source.coupon.vo.TemplateRequest;
 import com.source.coupon.vo.TemplateRule;
 import org.apache.commons.lang.time.DateUtils;
-import org.assertj.core.util.DateUtil;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +15,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.Date;
 
