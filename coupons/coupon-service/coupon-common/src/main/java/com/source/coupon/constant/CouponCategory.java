@@ -21,7 +21,7 @@ public enum CouponCategory {
      */
     MONEY_OFF_COUPON("满减券","001"),
     DISCOUNT_COUPON("折扣券","002"),
-    STAND_BY_COUPON("立减券","003");
+    DECREASE_COUPON("立减券","003");
 
     /**
      * 优惠券描述(分类)
