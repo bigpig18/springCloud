@@ -14,4 +14,4 @@ eureka:
 
 logging:
   level:
-   com.source.coupon: debug
+    com.source.coupon: debug
