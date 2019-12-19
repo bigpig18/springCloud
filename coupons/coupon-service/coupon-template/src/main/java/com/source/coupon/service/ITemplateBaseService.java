@@ -20,6 +20,7 @@ public interface ITemplateBaseService {
      * 根据优惠券模板id获取信息
      * @param id 模板id
      * @return {@link CouponTemplate} 优惠券模板实体
+     * @throws CouponException 自定义异常
      */
     CouponTemplate buildTemplateInfo(Integer id) throws CouponException;
 
