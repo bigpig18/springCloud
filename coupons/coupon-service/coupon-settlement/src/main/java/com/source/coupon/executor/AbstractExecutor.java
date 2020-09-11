@@ -3,6 +3,7 @@ package com.source.coupon.executor;
 import com.alibaba.fastjson.JSON;
 import com.source.coupon.vo.GoodsInfo;
 import com.source.coupon.vo.SettlementInfo;
+import java.math.RoundingMode;
 import org.apache.commons.collections4.CollectionUtils;
 
 import java.math.BigDecimal;
@@ -67,7 +68,7 @@ public abstract class AbstractExecutor {
      * @return 3位小数值
      */
     protected double retain3Decimals(double value){
-        return new BigDecimal(value).setScale(3,BigDecimal.ROUND_HALF_UP).doubleValue();
+        return new BigDecimal(value).setScale(3, RoundingMode.HALF_UP).doubleValue();
     }
 
     /**
