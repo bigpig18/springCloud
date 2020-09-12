@@ -1,6 +1,8 @@
 package com.source.coupon.controller;
 
 import com.alibaba.fastjson.JSON;
+import com.source.coupon.annotation.CouponPermission;
+import com.source.coupon.annotation.IgnorePermission;
 import com.source.coupon.entity.CouponTemplate;
 import com.source.coupon.exception.CouponException;
 import com.source.coupon.service.IBuildTemplateService;
@@ -48,6 +50,7 @@ public class CouponTemplateController {
      * @return {@link CouponTemplate}优惠券模板信息
      * @throws CouponException {@link CouponException} 自定义异常
      */
+    @CouponPermission(description = "buildTemplate",readOnly = false)
     @PostMapping(value = "/template/build")
     public CouponTemplate buildTemplate(@RequestBody TemplateRequest request)throws CouponException{
         log.info("Build Template: {}", JSON.toJSONString(request));
@@ -62,6 +65,7 @@ public class CouponTemplateController {
      * @return {@link CouponTemplate}优惠券模板信息
      * @throws CouponException {@link CouponException} 自定义异常
      */
+    @CouponPermission(description = "buildTemplateInfo")
     @GetMapping(value = "/template/info")
     public CouponTemplate buildTemplateInfo(@RequestParam("id") Integer id)throws CouponException{
         log.info("Build Template Info For: {}",id);
@@ -74,6 +78,7 @@ public class CouponTemplateController {
      * 127.0.0.1:9000/coupon/coupon-template/template/sdk/all
      * @return list
      */
+    @IgnorePermission
     @GetMapping(value = "/template/sdk/all")
     public List<CouponTemplateSdk> findAllUsableTemplate(){
         log.info("Find All Usable Template");
