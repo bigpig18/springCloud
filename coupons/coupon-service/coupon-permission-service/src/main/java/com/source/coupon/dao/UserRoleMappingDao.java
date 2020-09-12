@@ -14,8 +14,7 @@ public interface UserRoleMappingDao extends JpaRepository<UserRoleMapping,Intege
     /**
      * 查询用户角色
      * @param userId 用户id
-     * @param roleId 角色id
      * @return User-Role
      */
-    UserRoleMapping findByUserIdAndRoleId(Integer userId,Integer roleId);
+    UserRoleMapping findByUserId(Long userId);
 }
